@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/screens/profile/profile_screen.dart';
+import 'package:shop_app/screens/product_glasses/product_glasses_screen.dart';
+import 'package:shop_app/screens/product_goggles/product_goggles_screen.dart';
+import 'package:shop_app/screens/product_lenses/product_lens_screen.dart';
 
 import '../../../size_config.dart';
 import 'section_title.dart';
@@ -17,7 +19,7 @@ class SpecialOffers extends StatelessWidget {
           padding:
               EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
           child: SectionTitle(
-            title: "Special for you",
+            title: "Categories",
             press: () {},
           ),
         ),
@@ -30,20 +32,24 @@ class SpecialOffers extends StatelessWidget {
                 image: "assets/images/Image Banner 1.png",
                 category: "Frames",
                 numOfBrands: 18,
-                press: () {},
+                press: () {
+                  Navigator.pushNamed(context, GlassesScreen.routeName);
+                },
               ),
               SpecialOfferCard(
                 image: "assets/images/Image Banner 2.png",
                 category: "Goggles",
                 numOfBrands: 24,
-                press: () {},
+                press: () {
+                  Navigator.pushNamed(context, GogglesScreen.routeName);
+                },
               ),
               SpecialOfferCard(
                 image: "assets/images/Image Banner 3.png",
                 category: "Lenses",
                 numOfBrands: 24,
                 press: () {
-                  Navigator.pushNamed(context, ProfileScreen.routeName);
+                  Navigator.pushNamed(context, LensScreen.routeName);
                 },
               ),
               SizedBox(width: getProportionateScreenWidth(20)),

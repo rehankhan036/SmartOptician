@@ -10,6 +10,8 @@ class IconBtnWithCounter extends StatelessWidget {
     @required this.svgSrc,
     this.numOfitem = 0,
     @required this.press,
+    Colors color,
+    Icon icon,
   }) : super(key: key);
 
   final String svgSrc;

@@ -6,7 +6,7 @@ class Product {
   final List<String> images;
   final List<Color> colors;
   final double rating, price;
-  final bool isFavourite, isPopular;
+  final bool isFavourite, isPopular, isFrame, isGoggle, isLens;
 
   Product({
     @required this.id,
@@ -15,6 +15,9 @@ class Product {
     this.rating = 0.0,
     this.isFavourite = false,
     this.isPopular = false,
+    this.isFrame = false,
+    this.isGoggle = false,
+    this.isLens = false,
     @required this.title,
     @required this.price,
     @required this.description,
@@ -43,6 +46,7 @@ List<Product> demoProducts = [
         "Rectangle Eyeglasses 136741 is a stylish TR-100 frame suitable for wide range of lenses. Buy this high quality frame with complete confidence at best prices guaranteed & great customer experience.",
     rating: 4.8,
     isPopular: true,
+    isFrame: true,
   ),
   Product(
     id: 2,
@@ -62,6 +66,7 @@ List<Product> demoProducts = [
         "American Eagle Sunglasses 6448 is a Metal frame with Plastic Shades. And This Sunglasses is NON-RX",
     rating: 4.1,
     isPopular: true,
+    isGoggle: true,
   ),
   Product(
     id: 3,
@@ -81,6 +86,7 @@ List<Product> demoProducts = [
     rating: 4.1,
     isFavourite: true,
     isPopular: true,
+    isLens: true,
   ),
   Product(
     id: 4,
@@ -93,11 +99,52 @@ List<Product> demoProducts = [
       Color(0xFFDECB9C),
       Colors.white,
     ],
-    title: "Pilot Sunglasses 6479",
+    title: "Pilot Aviator Sunglasses 6479",
     price: 3000,
     description:
         "Pilot Sunglasses 6479 is a Metal frame with Plastic Shades. And This Sunglasses is NON-RX",
     rating: 4.1,
     isFavourite: true,
+    isGoggle: true,
+  ),
+  Product(
+    id: 5,
+    images: [
+      "assets/images/Round_frame_1.png",
+      "assets/images/Round_frame_2.png",
+      "assets/images/Round_frame_3.png",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "Round Eyeglasses 120936-c",
+    price: 3500,
+    description:
+        "Round Eyeglasses 120936-c by Eyeglasses.pk is a TR-100 frame suitable for wide range of lenses.This high quality frame is sold at discounted price at Eyeglasses.pk with price match guaranteed.",
+    rating: 4.8,
+    isFavourite: true,
+    isFrame: true,
+  ),
+  Product(
+    id: 6,
+    images: [
+      "assets/images/Lens_2.png",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "SOLOTICA HIDROCOR OCRE",
+    price: 4000,
+    description:
+        "Solotica Hidrocor Ocre lenses have a stunning light brown color suitable for dark Asian eyes. These lenses offer maximum opacity and come without a limbal ring for a natural look. This bestselling Solotica Hidrocor shade complements every complexion due to the subtle, beautiful shade.",
+    rating: 4.9,
+    isFavourite: true,
+    isLens: true,
   ),
 ];

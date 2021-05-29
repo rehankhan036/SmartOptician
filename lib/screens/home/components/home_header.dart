@@ -20,13 +20,13 @@ class HomeHeader extends StatelessWidget {
         children: [
           SearchField(),
           IconBtnWithCounter(
-            svgSrc: "assets/icons/Cart Icon.svg",
+            svgSrc: "assets/icons/Filter Icon.svg",
             press: () => Navigator.pushNamed(context, CartScreen.routeName),
           ),
           IconBtnWithCounter(
-            svgSrc: "assets/icons/Bell.svg",
+            svgSrc: "assets/icons/Cart Icon.svg",
             numOfitem: 3,
-            press: () {},
+            press: () => Navigator.pushNamed(context, CartScreen.routeName),
           ),
         ],
       ),

@@ -37,7 +37,7 @@ class _BodyState extends State<Body> {
               child: Row(
                 children: [
                   Spacer(),
-                  SvgPicture.asset("assets/icons/receipt.svg"),
+                  SvgPicture.asset("assets/icons/Trash.svg"),
                 ],
               ),
             ),
